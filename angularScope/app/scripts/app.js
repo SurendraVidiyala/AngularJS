@@ -1,5 +1,5 @@
 'use strict';
-angular.module('anupamaApp', []).controller('menuController', function() {
+angular.module('anupamaApp', []).controller('MenuController', ['$scope', function($scope) {
     this.tab = 1;
     this.filtText = '';
 
@@ -44,7 +44,7 @@ angular.module('anupamaApp', []).controller('menuController', function() {
         }
     ];
 
-    this.dishes = dishes;
+    $scope.dishes = dishes;
 
     this.select = function(setTab) {
         this.tab = setTab;
@@ -63,4 +63,4 @@ angular.module('anupamaApp', []).controller('menuController', function() {
     this.isSelected = function(checkTab) {
         return (this.tab === checkTab);
     };
-});
+}]);
