@@ -1,5 +1,5 @@
 {
-    "name": "angularForms",
+    "name": "factoryServiceProj",
     "private": true,
     "devDependencies": {
         "browser-sync": "^2.18.12",
