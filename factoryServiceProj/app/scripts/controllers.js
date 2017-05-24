@@ -96,5 +96,5 @@ angular.module('anupamaApp')
             author: "",
             date: ""
         };
-    }
+    };
 }]);
