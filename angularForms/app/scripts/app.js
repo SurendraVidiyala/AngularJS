@@ -175,6 +175,4 @@ angular.module('anupamaApp', [])
             date: ""
         };
     }
-}])
-
-;
+}]);
