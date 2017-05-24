@@ -8,6 +8,19 @@ angular.module('anupamaApp')
     $scope.filtText = '';
     $scope.showDetails = false;
     $scope.dishes = menuFactory.getDishes();
+    $scope.select = function(setTab) {
+        $scope.tab = setTab;
+
+        if (setTab === 2) {
+            $scope.filtText = "appetizer";
+        } else if (setTab === 3) {
+            $scope.filtText = "mains";
+        } else if (setTab === 4) {
+            $scope.filtText = "dessert";
+        } else {
+            $scope.filtText = "";
+        }
+    };
 
     $scope.isSelected = function(checkTab) {
         return ($scope.tab === checkTab);
@@ -49,7 +62,7 @@ angular.module('anupamaApp')
 }])
 
 .controller('DishDetailController', ['$scope', 'menuFactory', function($scope, menuFactory) {
-    $scope.dish = menuFactory.getDish(3);
+    var dish = menuFactory.getDish(3);
 
     $scope.dish = dish;
     $scope.order = 'author';
