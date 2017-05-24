@@ -1,11 +1,11 @@
 {
-    "name": "factoryServiceProj",
+    "name": "angularTemplates",
     "homepage": "https://github.com/SurendraVidiyala/AngularJS",
     "authors": [
         "<surendra_vidiyala> <<vidiyala.surendra@gmail.com>>"
     ],
     "description": "gulp configuration in Angular proj",
-    "main": "contactus.html",
+    "main": "index.html",
     "keywords": [
         "angular",
         "bootstrap",
