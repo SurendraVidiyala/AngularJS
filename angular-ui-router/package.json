@@ -1,5 +1,5 @@
 {
-    "name": "angularngRoute_SPAs",
+    "name": "angular-ui-router",
     "private": true,
     "devDependencies": {
         "browser-sync": "^2.18.12",
